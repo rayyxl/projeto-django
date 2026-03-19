@@ -3,6 +3,7 @@ from .models import Pessoa
 from .forms import PessoaForm
 
 def home(request):
+    print("Acessou a home")
     return render(request, 'home.html')
 
 def listar_pessoas(request):
